@@ -28,10 +28,12 @@ class ViewController: UIViewController {
             self.labelTitle.text = "Soy rico"
             self.imageViewTrash.image = UIImage.init(named: "money-image")
             self.buttonPush.setTitle("Púlsame y serás pobre", for: .normal)
+            self.view.backgroundColor = UIColor.cyan
         } else {
             self.labelTitle.text = "Soy pobre"
             self.imageViewTrash.image = UIImage.init(named: "trash-image")
             self.buttonPush.setTitle("Púlsame y serás rico", for: .normal)
+            self.view.backgroundColor = UIColor.brown
         }
 
     }

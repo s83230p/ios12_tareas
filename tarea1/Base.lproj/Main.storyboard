@@ -29,19 +29,29 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b82-qU-TtK">
                                 <rect key="frame" x="53.666666666666657" y="478" width="268" height="45"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
-                                <state key="normal" title="Púlsame y serás rico"/>
+                                <state key="normal" title="Púlsame y serás rico">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rwf-Hb-AUJ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarea 1 - Curso iOS12 (Pedro Torres)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oj-ig-GCW">
+                                <rect key="frame" x="48" y="698" width="279" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BOj-5c-0J0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Bdn-hk-VNQ"/>
                             <constraint firstItem="b82-qU-TtK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DgH-pO-a8i"/>
                             <constraint firstItem="K5f-CB-13M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sa9-cd-tSS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8oj-ig-GCW" secondAttribute="bottom" constant="10" id="enk-H1-HNg"/>
                             <constraint firstItem="BOj-5c-0J0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="inm-kZ-f0P"/>
                             <constraint firstItem="b82-qU-TtK" firstAttribute="top" secondItem="K5f-CB-13M" secondAttribute="bottom" constant="50" id="k4E-Ln-jfF"/>
+                            <constraint firstItem="8oj-ig-GCW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r7i-GB-ZzR"/>
                             <constraint firstItem="K5f-CB-13M" firstAttribute="top" secondItem="BOj-5c-0J0" secondAttribute="bottom" constant="50" id="tZm-ck-tSp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
