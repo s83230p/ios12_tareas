@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tarea1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soy pobre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOj-5c-0J0">
+                                <rect key="frame" x="106.66666666666667" y="124" width="161.66666666666663" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trash-image" translatesAutoresizingMaskIntoConstraints="NO" id="K5f-CB-13M">
+                                <rect key="frame" x="107.66666666666669" y="215" width="160" height="213"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b82-qU-TtK">
+                                <rect key="frame" x="53.666666666666657" y="478" width="268" height="45"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                <state key="normal" title="Púlsame y serás rico"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rwf-Hb-AUJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BOj-5c-0J0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Bdn-hk-VNQ"/>
+                            <constraint firstItem="b82-qU-TtK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DgH-pO-a8i"/>
+                            <constraint firstItem="K5f-CB-13M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sa9-cd-tSS"/>
+                            <constraint firstItem="BOj-5c-0J0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="inm-kZ-f0P"/>
+                            <constraint firstItem="b82-qU-TtK" firstAttribute="top" secondItem="K5f-CB-13M" secondAttribute="bottom" constant="50" id="k4E-Ln-jfF"/>
+                            <constraint firstItem="K5f-CB-13M" firstAttribute="top" secondItem="BOj-5c-0J0" secondAttribute="bottom" constant="50" id="tZm-ck-tSp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="buttonPush" destination="b82-qU-TtK" id="pUz-D4-OH6"/>
+                        <outlet property="imageViewTrash" destination="K5f-CB-13M" id="52s-sw-zcM"/>
+                        <outlet property="labelTitle" destination="BOj-5c-0J0" id="quz-tJ-6m0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="22.906403940886701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="trash-image" width="160" height="213"/>
+    </resources>
+</document>
